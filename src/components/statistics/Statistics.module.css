@@ -1,0 +1,15 @@
+.statistics{
+    background-color: #ffff;
+    margin-left: 30px;
+}
+
+.title{
+    text-align: center;
+    color: #696969;
+    text-transform: uppercase;
+}
+
+li{
+    border: none;
+}
+
