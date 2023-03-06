@@ -33,19 +33,13 @@ export const App = () => {
       <Statistics 
       title='Upload stats'
       stats={data}/>
+
       <FriendList
       friends={friends}
-      key={friends.id}
-      name={friends.name}
-      avatar={friends.avatar}
-      isOnline={friends.isOnline}
       />
+      
       <Transactions
       items={transaction}
-      key={transaction.id}
-      type={transaction.type}
-      amount={transaction.amount}
-      currency={transaction.currency}
       />
     </div>
   );
