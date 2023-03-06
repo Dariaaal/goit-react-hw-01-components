@@ -20,7 +20,7 @@ const Statistics = ({title, stats}) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.shape({
+    stat: PropTypes.shape({
         label: PropTypes.string,
         percentage: PropTypes.number.isRequired,
       })

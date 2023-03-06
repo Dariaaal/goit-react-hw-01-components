@@ -2,12 +2,14 @@ import Profile from 'components/profile/Profile';
 import user from 'components/profile/user.json';
 import Statistics from 'components/statistics/Statistics';
 import data from 'components/statistics/data.json';
+import FriendList from 'components/friends/FriendList';
+import friends from 'components/friends/friends.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -29,6 +31,13 @@ export const App = () => {
       <Statistics 
       title='Upload stats'
       stats={data}/>
+      <FriendList
+      friends={friends}
+      key={friends.id}
+      name={friends.name}
+      avatar={friends.avatar}
+      isOnline={friends.isOnline}
+      />
     </div>
   );
 };

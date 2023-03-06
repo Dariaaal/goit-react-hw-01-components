@@ -8,7 +8,6 @@ const Profile = ({location, avatar, username, tag, stats:{followers, views, like
       <img
         src={avatar}
         alt="User avatar"
-        class="avatar"
       />
       <p className={css.name}>{username}</p>
       <p>{tag}</p>
