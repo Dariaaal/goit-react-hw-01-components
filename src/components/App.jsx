@@ -4,6 +4,8 @@ import Statistics from 'components/statistics/Statistics';
 import data from 'components/statistics/data.json';
 import FriendList from 'components/friends/FriendList';
 import friends from 'components/friends/friends.json';
+import Transactions from 'components/transactions/TransactionHistory';
+import transaction from 'components/transactions/transactions.json';
 
 export const App = () => {
   return (
@@ -37,6 +39,13 @@ export const App = () => {
       name={friends.name}
       avatar={friends.avatar}
       isOnline={friends.isOnline}
+      />
+      <Transactions
+      items={transaction}
+      key={transaction.id}
+      type={transaction.type}
+      amount={transaction.amount}
+      currency={transaction.currency}
       />
     </div>
   );
